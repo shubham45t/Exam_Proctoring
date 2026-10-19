@@ -1,0 +1,22 @@
+# secrets / local config
+.env
+*.pem
+# runtime data: databases, recordings, evidence, model weights (never commit)
+backend/data/*.db*
+backend/data/media/*
+!backend/data/media/.gitkeep
+evidence/*
+!evidence/.gitkeep
+*.pt
+*.onnx
+*.engine
+# python / node
+__pycache__/
+.pytest_cache/
+.venv/
+node_modules/
+frontend/dist/
+
+*.tsbuildinfo
+backend/data/calibration/*
+!backend/data/calibration/.gitkeep
